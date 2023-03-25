@@ -17,11 +17,6 @@ ALLOWED_HOSTS = []
 
 
 AUTH_USER_MODEL = 'auth.User'
-# # Application definition
-# AUTHENTICATION_BACKENDS = [
-#     'django.contrib.auth.backends.ModelBackend',
-#     'users.backends.EmailBackend',
-# ]
 
 
 
@@ -33,10 +28,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users.apps.UsersConfig',
-    'rest_framework',
     'corsheaders',
+    'rest_framework',
     'rest_framework_simplejwt',
+    'users.apps.UsersConfig',
+    'products.apps.ProductsConfig',
    
 ]
 
